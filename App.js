@@ -13,7 +13,7 @@ export default function App() {
 
   async function fetchUsers() {
     try {
-      const { data } = await axios.get('https://randomuser.me/api/?gender=female&results=50')
+      const { data } = await axios.get('https://randomuser.me/api/?gender=male&results=50')
       setUsers(data.results)
     } catch (error) {
       console.log(error)
